@@ -112,9 +112,9 @@ Power BI Desktop, DAX, Power Query, Data Modeling, Excel.
 ## Repository Structure
 
 ```
-├── streaming-analytics-dashboard.pbix
+├── project.pbix
 ├── data/                  # synthetic dataset (Excel/CSV)
-├── report.pdf             # PDF export of the report
+├── project.pdf             # PDF export of the report
 └── README.md
 ```
 
