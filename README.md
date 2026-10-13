@@ -65,7 +65,7 @@ All measures live in the `_Measures` table.
 | `Spend MA7` | `AVERAGEX(DATESINPERIOD(DateTable[Date], MAX(DateTable[Date]), -7, DAY), [Total Spend])` |
 | `Spend Anomaly %` | `DIVIDE([Total Spend] - [Spend MA7], [Spend MA7])` |
 | `Total Impressions` / `Total Clicks` | `SUM` of the corresponding `Marketing_Spend` columns |
-| `Funnel Value` | `SWITCH(SELECTEDVALUE(FunnelStages[FunnelStage]), "Impressions", ..., "Clicks", ..., "New Subscribers", ...)` |
+| `Funnel Value` | `SWITCH(SELECTEDVALUE(FunnelStages[FunnelStage]),"Impressions", [Total Impressions],"Clicks", [Total Clicks],"New Subscribers", [New Subscribers],BLANK())` |
 | `Total Watch Minutes` | `SUM(Watch_Events[watch_minutes])` |
 | `Avg Watch Minutes` | `DIVIDE(SUM(Watch_Events[watch_minutes]), DISTINCTCOUNT(Watch_Events[subscriber_id]))` |
 
