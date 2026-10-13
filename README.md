@@ -114,7 +114,6 @@ Power BI Desktop, DAX, Power Query, Data Modeling, Excel.
 ```
 ├── streaming-analytics-dashboard.pbix
 ├── data/                  # synthetic dataset (Excel/CSV)
-├── images/                # report screenshots
 ├── report.pdf             # PDF export of the report
 └── README.md
 ```
